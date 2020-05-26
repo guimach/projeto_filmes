@@ -1,0 +1,12 @@
+# YAML Template
+---
+default: -p pretty -p html -p homol -p chrome
+pretty: --format pretty
+progress: --format progress
+html: --format html --out=report/features_report.html
+json: --format json --out=report/features_report.json
+prod: ENV_TYPE=prod
+homol: ENV_TYPE=homol
+chrome: BROWSER=chrome
+firefox: BROWSER=firefox
+chrome_headless: BROWSER=chrome_headless
